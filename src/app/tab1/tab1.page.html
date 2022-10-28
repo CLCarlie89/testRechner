@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Test Rechner
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <h1>Simpler Rechner</h1>
+  <p>Das ist ein Simpler Rechner der 2 Zahlen miteinander verrechnet.<br>
+    Einfach die 2 Zahlen eingebeen und die Rechenart auswählen.
+  </p>
+  <table>
+    <td>
+      <ion-item>
+        <ion-label position="floating">Zahl1 </ion-label>
+        <ion-input [(ngModel)]="wert1"></ion-input>
+      </ion-item>
+    </td>
+    <td>
+      <ion-item>
+        <ion-label position="floating">Zahl2 </ion-label>
+        <ion-input [(ngModel)]="wert2"></ion-input>
+      </ion-item>
+    </td>
+  </table>
+
+  <ion-button (click)="openNextTab(1)">+</ion-button>
+  <ion-button (click)="openNextTab(2)">-</ion-button>
+  <ion-button (click)="openNextTab(3)">*</ion-button>
+  <ion-button (click)="openNextTab(4)">/</ion-button>
+</ion-content>
